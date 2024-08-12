@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_list_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.models import User, auth
 from .forms import MemoForm
@@ -21,8 +21,8 @@ def home(request):
 def message_func(request):
     return render(request, 'message.html')
 
-def detail_func(request):
-    filter_memo = get_list_or_404(Memo, pk=pk)
+def details_func(request, pk):
+    filter_memo = get_object_or_404(Memo, pk=pk)
     return render(request, 'details.html', {'memo_data': filter_memo})
 # def register(request):
 #     if request.method == "POST":

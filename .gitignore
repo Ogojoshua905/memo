@@ -1,0 +1,91 @@
+# Virtual Environment
+menv/
+
+# Python cache files
+*.py[cod]
+__pycache__/
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.mo
+
+# Local development database
+db.sqlite3
+
+# Django migrations
+**/migrations/
+**/migrations/**/000*.py
+**/migrations/**/001*.py
+**/migrations/**/002*.py
+
+# Static and media files
+/static/
+/media/
+/staticfiles/
+
+# Temporary files and directories
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE-specific directories
+.vscode/
+.idea/
+
+# MacOS-specific files
+.DS_Store
+
+# Environment variables
+.env
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.nox/
+
+# mypy
+.mypy_cache/
+
+# Test and coverage files
+.pytest_cache/
+*.cover
+*.coverage
+*.testresult
+
+# Build directories
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+
+# Ignore anything in .well-known directories, used for letsencrypt
+/.well-known/
+
+# Node modules (if applicable)
+node_modules/
+
+# Windows-specific files
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# pycharm related files
+.idea/
+.idea/*
+.idea/**/
